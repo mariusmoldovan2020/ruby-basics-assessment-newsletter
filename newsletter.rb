@@ -10,6 +10,7 @@ CAMPUS = {
 }
 DATE = "Nov 20, 2019"
 
+
 SUBSCRIBERS = ["rhona@grimes.info", "cedricschmidt@robel.io", "edmond@ko.org", "bryant@cummingsfisher.biz", "alverta@bernhard.name"]
 UNSUBSCRIBED = ["cedricschmidt@robel.io", "alverta@bernhard.name"]
 
@@ -28,12 +29,14 @@ ARTICLES = [
 #########################
 
 def calculate_recipients
+  
   # Using the SUBSCRIBERS and UNSUBSCRIBED arrays,
   # write a method that will return an array of only the subscribers who haven't unsubscribed
 end
-
-def first_n_articles(number_of_articles
-  ARTICLES.first(number_of_articles)
+# binding.pry
+def first_n_articles(number_of_articles)
+  # binding.pry
+  ARTICLES[0..number_of_articles.to_i]
 end
 
 def print_recipients
@@ -54,9 +57,9 @@ def print_many_articles(articles)
 end
 
 def format_campus_location(campus)
-  "Flatiron #{campus["name"]}"
+  "Flatiron #{CAMPUS[:name]}"
 end
-
+# binding.pry
 def format_subject
   puts "#{format_campus_location(CAMPUS)} Newsletter - #{DATE}\n\n"
 end
@@ -80,7 +83,7 @@ def print_newsletter(number)
   print_many_articles(articles)
   puts format_footer(CAMPUS)
 
-  end
+  
 end
 
 def run
@@ -91,4 +94,5 @@ end
 
 # When we run "ruby newsletter.rb" in the command line,
 # the 'run' method will be called because we're calling it below.
+# binding.pry
 run

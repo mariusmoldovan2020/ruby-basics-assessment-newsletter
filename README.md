@@ -12,8 +12,6 @@ At the bottom of this file is the rubric used to evaluate your submission. You d
 
 ## Introduction
 
-The program you are working with is a command line tool to help generate newsletters. The code isn't working right now - there are errors in the existing code, and there's some functionality that is missing. Your job is to fix the errors and add the functionality so that the newsletters are generated correctly.
-
 Make edits to `newsletter.rb`. As you do, you can run the code with `ruby newsletter.rb` to check the output. `sample_output.txt` shows the output that you will see if you complete all of the tasks below.
 
 ## Instructions
